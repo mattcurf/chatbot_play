@@ -1,6 +1,6 @@
 # llm_play 
 
-A repo which illustrates the 'hello world' implementation of LLM using Microsoft Phi-2 LLM model, using two different software stacks:
+A repo which illustrates multiple 'hello world' implementations of LLM using Microsoft Phi-2 LLM model with two different software stacks:
 * ipex-llm: An example using [ipex-llm](https://github.com/intel-analytics/ipex-llm) 
 * optium-openvino: An example using [Optimum + OpenVINO](https://huggingface.co/docs/optimum/en/index)
 
@@ -15,5 +15,7 @@ Run the example to download the phi-2 model and perform a very simple prompt 'Wh
 ```bash
 $ ./run.sh
 ```
+
+In each folder, the Dockerfile contains all of the dependencies required to run each solution, and test.py implements the hello, world LLM app itself. 
 
 Requires Ubuntu 24.04 for ARC GPU in-tree driver kernel 6.8 support + docker installation
